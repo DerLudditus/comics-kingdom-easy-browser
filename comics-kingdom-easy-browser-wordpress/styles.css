@@ -1,0 +1,387 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: #EAEAE7;
+    height: 100vh;
+    overflow: hidden;
+    font-weight: 500;
+}
+
+#app-container {
+    display: flex;
+    height: 100vh;
+    gap: 10px;
+    padding: 10px;
+}
+
+/* Left Panel - Comic List */
+#left-panel {
+    width: min(250px, 25%);
+    background: #EAEAE7;
+    border: 1px solid #d0d0d0;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#left-panel h2 {
+    padding: 15px;
+    background: #006192;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+}
+
+#comic-list {
+    flex: 1;
+    overflow-y: auto;
+    padding: 5px;
+}
+
+.category-header {
+    padding: 8px 5px 4px 5px;
+    font-weight: 700;
+    font-size: 13px;
+    color: #006192;
+    margin-top: 8px;
+    border-bottom: 1px solid #006192;
+}
+
+.comic-item {
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-bottom: 2px;
+    transition: background-color 0.2s;
+    font-weight: 500;
+}
+
+.comic-item:hover {
+    background-color: #e9ecef;
+}
+
+.comic-item.active {
+    background-color: #006192;
+    color: white;
+    font-weight: 700;
+}
+
+/* Center Panel - Comic Viewer */
+#center-panel {
+    flex: 1;
+    background: #EAEAE7;
+    border: 1px solid #d0d0d0;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#navigation-bar {
+    display: flex;
+    gap: 10px;
+    padding: 15px;
+    background: #EAEAE7;
+    border-bottom: 1px solid #d0d0d0;
+    justify-content: center;
+}
+
+#navigation-bar button {
+    padding: 8px 16px;
+    background: #006192;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+#navigation-bar button:hover {
+    background: #004A7F;
+}
+
+#navigation-bar button:active {
+    background: #004670;
+}
+
+#comic-viewer {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.comic-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.comic-info h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.comic-info p {
+    color: #666;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.comic-image-container {
+    max-width: 100%;
+}
+
+.comic-image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.comic-iframe-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.comic-iframe-container iframe {
+    width: 100%;
+    min-height: 800px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: #EAEAE7;
+}
+
+.comic-link-fallback {
+    margin-top: 15px;
+    padding: 15px;
+    background: #EAEAE7;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.comic-link-fallback a {
+    color: #006192;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.comic-link-fallback a:hover {
+    text-decoration: underline;
+}
+
+.error-message {
+    text-align: center;
+    padding: 40px;
+    color: #dc3545;
+    font-weight: 500;
+}
+
+.error-message h3 {
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+#status-bar {
+    padding: 10px 15px;
+    background: #EAEAE7;
+    border-top: 1px solid #d0d0d0;
+    font-size: 14px;
+    font-weight: 500;
+    color: #666;
+}
+
+/* Right Panel - Calendar */
+#right-panel {
+    width: min(250px, 20%);
+    background: #EAEAE7;
+    border: 1px solid #d0d0d0;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#right-panel h2 {
+    padding: 15px;
+    background: #006192;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+}
+
+#calendar {
+    padding: 15px;
+    overflow-y: auto;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.calendar-header button {
+    background: #006192;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.calendar-header button:hover {
+    background: #004A7F;
+}
+
+.calendar-header span {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.calendar-year-nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.calendar-year-nav button {
+    flex: 1;
+    background: #004670;
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.calendar-year-nav button:hover {
+    background: #6A1814;
+}
+
+.calendar-date-input {
+    margin-bottom: 10px;
+    display: flex;
+    gap: 4px;
+}
+
+.calendar-date-input select {
+    flex: 1;
+    padding: 5px 4px;
+    border: 1px solid #d0d0d0;
+    border-radius: 4px;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    background: white;
+    cursor: pointer;
+}
+
+.calendar-date-input select:focus {
+    outline: none;
+    border-color: #006192;
+}
+
+#year-select {
+    flex: 1.2;
+}
+
+#month-select {
+    flex: 1;
+}
+
+#day-select {
+    flex: 0.8;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 2px;
+}
+
+.calendar-day-header {
+    text-align: center;
+    font-weight: 700;
+    font-size: 12px;
+    padding: 5px;
+    color: #666;
+}
+
+.calendar-day {
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.calendar-day:not(.empty):not(.future):hover {
+    background-color: #e9ecef;
+}
+
+.calendar-day.empty {
+    cursor: default;
+}
+
+.calendar-day.future {
+    color: #ccc;
+    cursor: not-allowed;
+}
+
+.calendar-day.today {
+    background-color: #ffc107;
+    font-weight: 700;
+}
+
+.calendar-day.selected {
+    background-color: #006192;
+    color: white;
+    font-weight: 700;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
