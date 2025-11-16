@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comics Kingdom Easy Browser</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app-container">
+        <!-- Left Panel: Comic List -->
+        <div id="left-panel">
+            <h2>King Comic Strips</h2>
+            <div id="comic-list"></div>
+        </div>
+
+        <!-- Center Panel: Comic Viewer -->
+        <div id="center-panel">
+            <div id="navigation-bar">
+                <button id="btn-first" title="First (Home)">First</button>
+                <button id="btn-prev" title="Previous (←)">Previous</button>
+                <button id="btn-next" title="Next (→)">Next</button>
+                <button id="btn-today" title="Today (End)">Today</button>
+                <button id="btn-random" title="Random">Random</button>
+            </div>
+            <div id="comic-viewer">
+                <div class="comic-info">
+                    <h2>Welcome to Comics Kingdom Easy Browser</h2>
+                    <p>Select a comic from the list to get started</p>
+                </div>
+            </div>
+            <div id="status-bar">
+                <span id="status">Ready</span>
+            </div>
+        </div>
+
+        <!-- Right Panel: Calendar -->
+        <div id="right-panel">
+            <h2>Calendar</h2>
+            <div id="calendar"></div>
+        </div>
+    </div>
+
+    <script src="comics-data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
