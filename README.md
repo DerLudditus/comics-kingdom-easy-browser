@@ -17,7 +17,7 @@ A completely server-free (proxy-free) HTML+JS version cannot be made due to CORS
 
 Only a small selection of the comics available in free access is supported. I'm afraid it has to do with personal preferences, but not only that.
 
-Should you follow Joshua Fruhlinger's [The Comics Curmudgeon](https://joshreads.com/), you'll notice that there are many other titles worth reading. However, famous great titles like the following ones never make sense when you only read the panels for a day; they're serials or feuilletons (*romans-feuilletons*, as the French would put it):
+Should you follow Joshua Fruhlinger's [The Comics Curmudgeon](https://joshreads.com/), you'll notice that there are many other titles worth reading. However, famous great titles like the following ones never make sense when you only read the panels for a day; they're serials or feuilletons:
 
 - Dick Tracy
 - Judge Parker
@@ -45,7 +45,7 @@ So I decided against including any of them. Feel free to change the selection yo
 12. **Arctic Circle**
 13. **Carpe Diem**
 14. **Never Been Deader**
-15. **Dustin** -
+15. **Dustin**
 16. **Pardon My Planet**
 17. **Rhymes with Orange**
 18. **Shoe**
