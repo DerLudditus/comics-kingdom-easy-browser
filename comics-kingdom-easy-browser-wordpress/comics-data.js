@@ -151,7 +151,7 @@ const COMICS_DATA = [
         name: "shoe",
         displayName: "Shoe",
         baseUrl: "https://comicskingdom.com/shoe",
-        author: "Gary Brookins & Susie MacNelly",
+        author: "Gary Brookins, Ben Lansing & Susie MacNelly",
         earliestDate: "2006-06-19"
     },
     {
