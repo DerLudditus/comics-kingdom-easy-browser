@@ -56,7 +56,7 @@ A web-based comic strip browser for Comics Kingdom comics designed to run on Wor
 10. Bizarro *
 11. The Brilliant Mind Of Edison Lee
 12. Arctic Circle
-13. Carpe Diem
+13. Carpe Diem *
 14. Never Been Deader *
 15. Dustin
 16. Pardon My Planet *
@@ -74,6 +74,7 @@ The following 6 comics have automatic scaling applied when they are very large:
 - **Pluggers**
 - **The Family Circus**
 - **Bizarro**
+- **Carpe Diem**
 - **Never Been Deader**
 - **Pardon My Planet**
 
