@@ -89,6 +89,7 @@ The following 6 comics have automatic scaling applied when they are very large:
 - **Pluggers**
 - **The Family Circus**
 - **Bizarro**
+- **Carpe Diem**
 - **Never Been Deader**
 - **Pardon My Planet**
 
