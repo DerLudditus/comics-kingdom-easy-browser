@@ -110,7 +110,8 @@ const COMICS_DATA = [
         displayName: "Carpe Diem",
         baseUrl: "https://comicskingdom.com/carpe-diem",
         author: "Niklas Eriksson",
-        earliestDate: "2015-05-03"
+        earliestDate: "2015-05-03",
+        scale: 0.5
     },
     {
         category: "MODERN",
