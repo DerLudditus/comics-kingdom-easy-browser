@@ -53,7 +53,7 @@ Then open your browser to: `http://localhost:8000/index.html`
 10. Bizarro *
 11. The Brilliant Mind Of Edison Lee
 12. Arctic Circle
-13. Carpe Diem
+13. Carpe Diem *
 14. Never Been Deader *
 15. Dustin
 16. Pardon My Planet *
@@ -71,6 +71,7 @@ The following 6 comics have automatic scaling applied when they are very large:
 - **Pluggers**
 - **The Family Circus**
 - **Bizarro**
+- **Carpe Diem**
 - **Never Been Deader**
 - **Pardon My Planet**
 
@@ -106,3 +107,4 @@ The Python proxy server fetches comics from ComicsKingdom.com server-side, bypas
 This project is licensed under the MIT License.
 
 This is a personal project for browsing publicly available comics from ComicsKingdom.com. All comic strips are property of their respective creators and copyright holders.
+
