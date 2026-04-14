@@ -12,6 +12,15 @@ This is the sibling of the web version of the [Comic Strip Browser for GoComics]
 
 A completely server-free (proxy-free) HTML+JS version cannot be made due to CORS limitations.
 
+---
+
+# NEW!
+
+:ok_hand: The [**standalone PyQt6 app for GoComics, now in version 2 that supports Windows**](https://github.com/DerLudditus/comic-strip-browser),  **also supports Comics Kingdom!**
+
+---
+
+
 
 ### Supported Comic Strips
 
